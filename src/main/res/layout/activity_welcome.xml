@@ -10,7 +10,7 @@
         android:id="@+id/imgTrophy"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/oscar"
         android:layout_marginBottom="16dp"/>
 
     <TextView

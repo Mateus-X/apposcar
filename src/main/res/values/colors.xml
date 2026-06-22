@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="retro_background">#0D0D0D</color>
+    <color name="retro_surface">#1A1A1A</color>
+    <color name="retro_primary_green">#39FF14</color>
+    <color name="retro_primary_dark">#004400</color>
+    <color name="retro_text_primary">#39FF14</color>
+    <color name="retro_text_secondary">#888888</color>
+    <color name="retro_error">#FF003C</color>
 </resources>

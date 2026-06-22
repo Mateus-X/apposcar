@@ -1,8 +1,35 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-  <style name="Theme.Apposcar" parent="Base.Theme.Apposcar">
-    <!-- Transparent system bars for edge-to-edge. -->
-    <item name="android:navigationBarColor">@android:color/transparent</item>
-    <item name="android:statusBarColor">@android:color/transparent</item>
-    <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
-  </style>
+    <style name="Base.Theme.Apposcar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/retro_background</item>
+        <item name="colorPrimary">@color/retro_primary_green</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSurface">@color/retro_surface</item>
+        <item name="colorOnSurface">@color/retro_text_primary</item>
+
+        <item name="android:fontFamily">monospace</item>
+
+        <item name="android:textColor">@color/retro_text_primary</item>
+
+        <item name="materialButtonStyle">@style/RetroButtonStyle</item>
+
+        <item name="editTextStyle">@style/RetroEditTextStyle</item>
+    </style>
+
+    <style name="RetroButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_retro_outline</item>
+        <item name="backgroundTint">@null</item> <item name="android:textColor">@color/retro_primary_green</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="RetroEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_retro_outline</item>
+        <item name="android:textColor">@color/retro_text_primary</item>
+        <item name="android:textColorHint">@color/retro_text_secondary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textCursorDrawable">@null</item> </style>
+
+    <style name="Theme.Apposcar" parent="Base.Theme.Apposcar" />
 </resources>

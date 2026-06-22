@@ -98,6 +98,9 @@ class WelcomeActivity : AppCompatActivity() {
                         // Não votou, libera a tela
                         progressWelcome.visibility = View.GONE
                         PrefsHelper.setVotingLocked(this@WelcomeActivity, false)
+                        btnVoteMovie.alpha = 1f
+                        btnVoteDirector.alpha = 1f
+                        btnConfirmVote.alpha = 1f
                         setButtonsEnabled(true)
                     }
                 } else {
@@ -131,6 +134,9 @@ class WelcomeActivity : AppCompatActivity() {
                 txtVotoFilmeStatus.text = "Filme: $movieName"
                 txtVotoDiretorStatus.text = "Diretor: $directorName"
                 layoutVotosRegistrados.visibility = View.VISIBLE
+                btnVoteMovie.alpha = 0.5f
+                btnVoteDirector.alpha = 0.5f
+                btnConfirmVote.alpha = 0.5f
                 setButtonsEnabled(false)
             }
         }

@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                     Toast.makeText(
                         this@LoginActivity,
-                        t.message ?: "Erro desconhecido",
+                        "Erro de conexão",
                         Toast.LENGTH_LONG
                     ).show()                }
             })
