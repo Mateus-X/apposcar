@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgTrophy"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutVotosRegistrados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:background="#E0F7FA"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você já votou!"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#006064"/>
+
+        <TextView
+            android:id="@+id/txtVotoFilmeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtVotoDiretorStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVoteMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votar Filme"/>
+
+    <Button
+        android:id="@+id/btnVoteDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votar Diretor"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Voto"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D32F2F"/>
+</LinearLayout>
