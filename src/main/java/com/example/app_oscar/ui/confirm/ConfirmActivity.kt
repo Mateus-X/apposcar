@@ -62,7 +62,7 @@ class ConfirmActivity : AppCompatActivity() {
                         edtConfirmToken.isEnabled = false
                         showDialog("Sucesso", "Seu voto foi registrado definitivamente.")
                     } else {
-                        showDialog("Erro", response.body()!!.message)
+                        showDialog("Erro", "Token inválido")
                     }
                 }
 

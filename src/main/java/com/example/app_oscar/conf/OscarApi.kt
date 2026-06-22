@@ -29,7 +29,7 @@ interface OscarApi {
 }
 
 object RetrofitClient {
-    private const val BASE_URL = "http://192.168.18.184:3000/" // IP padrão do emulador Android para localhost
+    private const val BASE_URL = "http://10.150.236.169:3000/" // IP padrão do emulador Android para localhost
 
     val instance: OscarApi by lazy {
         val retrofit = Retrofit.Builder()
